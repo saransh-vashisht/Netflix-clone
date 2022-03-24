@@ -39,7 +39,7 @@ img{
     width: 100%;
     height: 748.4px;
     position: relative;
-    background: url('/Image/IN-en-20220131-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
+    background: url('/Netflix-clone/Image/IN-en-20220131-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
 }
 .showcase::after{
     content: '';
@@ -182,7 +182,7 @@ height: 71px;
     width:960px;
 }
 .arrow{
-    content: url("/arrow_drop_down_white_24dp.svg");
+    content: url("/Netflix-clone/arrow_drop_down_white_24dp.svg");
     right: 3rem;
     position: relative;
     height: 24px;
@@ -230,7 +230,7 @@ img {
   margin-right: 15px;
 
   left: 7px;
-  content: url('/language_white_24dp.svg');
+  content: url('/Netflix-clone/language_white_24dp.svg');
   position: relative;
   width: 12px;
   height: -4px;
@@ -457,7 +457,7 @@ h1 span{
     z-index: 3;
 } */
 .card-gif{
-    background: url("/Image/download-icon.gif") center center no-repeat;
+    background: url("/Netflix-clone/Image/download-icon.gif") center center no-repeat;
     z-index: 3;
     background-size: 100%;
     outline-offset: -2px;
@@ -677,7 +677,7 @@ margin-bottom: 30px;
     margin-left: 0;
     margin-right: 15px;
     left: 9px;
-    content: url(/Image/icons8-globe-24.png);
+    content: url(/Netflix-clone/Image/icons8-globe-24.png);
     position: relative;
     width: 21px;
     top: 14px;
@@ -720,7 +720,7 @@ margin-bottom: 30px;
  }
  .arrowfooter{
     /* content: url(/arrow_drop_down_white_24dp.svg); */
-    content: url(/Image/icons8-sort-down-30.png);
+    content: url(/Netflix-clone/Image/icons8-sort-down-30.png);
     right: -6.5rem;
     position: relative;
     height: 23px;
