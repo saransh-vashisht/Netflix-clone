@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+:root{
+    --primary-color: #e50914;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arimo', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #000;
+	color: #999;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4{
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+p{
+    margin: 0.5rem 0;
+
+}
+img{
+    width: 100%;
+}
+
+.showcase{
+    width: 100%;
+    height: 748.4px;
+    position: relative;
+    background: url('/Image/IN-en-20220131-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 0.00001px 100px 250px #000000,inset -0.00001px -100px 250px #000000;
+    /* gives the shadow in the corners */
+}
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+    
+
+}
+.showcase-top img{
+    width: 180px;
+    position: absolute;
+    top: 42%;
+    left: 8.8%;
+        z-index: 2;
+    height: 45px;
+    transform: translate(-50%, -50%);
+}
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.showcase-content{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+#content1{
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+}
+#content2{
+    font-size: 4rem;
+    left: 5px;
+}
+#content1::after{
+    content: "\a";
+    white-space: pre;
+}
+.showcase-content h1{
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.1rem;
+    margin: 0 0 2rem ;
+    margin-top: 10px;
+}
+.showcase-content p{
+    
+    margin-bottom: 30px;
+    color: #fff;
+}
+#para1{
+    font-size: 1.625rem;
+    position: relative;
+    bottom: 20px;
+}
+#para2{
+    position: relative;
+    bottom: 36px;
+    font-size: 1.18rem;
+    
+}
+.boxelement{
+    display: flex;
+    width: 75vw;
+    position: relative;
+    bottom: 50px;
+height: 71px;
+   
+}
+.length{
+    width: 33vw;
+    margin-left: 196px;
+}
+.length2{
+    width: 16.5vw;
+}
+.wrapper{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+#language{
+ border: none;
+ 
+}
+/* Language button */
+.select {
+    position: relative;
+    right: 18px;
+  padding: 9px 21px;
+  /* padding at top and bottom slightly greater than left and right one */
+  background-color: transparent;
+  /* border: 1px solid white; */
+  border: none;
+  outline: 0px;
+  cursor: pointer;
+  font-size: 0.95em;
+  letter-spacing: 1px;
+
+  color: white;
+  /* Replace default styling (arrow) */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* background-image: url("/arrow_drop_down_white_24dp.svg"); */
+  background-repeat: no-repeat;
+  background-position: left 60px top 50%;
+  padding-left: 10px;
+  top: -3px;
+  height: 38px;
+
+  
+}
+#wrap{
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+.arrow{
+    content: url("/arrow_drop_down_white_24dp.svg");
+    right: 3rem;
+    position: relative;
+    height: 24px;
+    top: 5px;
+    padding-left: 2px;
+}
+/* FOcus is shown when you click it or use tab key to go on it */
+/* .select:focus, .select:hover{
+      outline: none;
+      border: 2px solid whitesmoke;
+  } */
+/* In this option we can only style background and color since it changes browser's default background option */
+
+.select option {
+  background: grey;
+  
+}
+/* .container::before{
+          content: url(/language_white_24dp.svg);
+         top: 200px
+      }; */
+img {
+  margin-left: 5px;
+  width: 18px;
+  height: 15px;
+  margin-top: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  width: 100px;
+  left: 78.5em;
+  padding-left: 0;
+  margin-left: 0;
+  top: 1.7rem;
+  height: 37px;
+  border-radius: 4px;
+  
+  /* Position absolute to move the element to the left of the container */
+  position: absolute;
+}
+.smollcontainer {
+  margin-left: 0;
+  margin-right: 15px;
+
+  left: 7px;
+  content: url('/language_white_24dp.svg');
+  position: relative;
+  width: 12px;
+  height: -4px;
+ 
+
+}
+
+#lang-switch{
+    background-color: transparent;
+    border: 1px solid white;
+}
+/* Add utility claasses at the bopttom whenever using them to add any function in it */
+/* Buttons */
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.btn-rounded{
+    border-radius: 5px;
+
+}
+
+.btn-xl{
+    font-size: 2rem;
+    padding: 0.8rem 1.3rem;
+    font-weight: 1;
+  
+    /* Use uppercase letters rather than using it in direct html */
+}
+.email-xl{
+    font-size: 0.95rem;
+    padding: 0.8rem 1.3rem;
+}
+
+
+/* Tabs section */
+
+/* Tv */
+.tv {
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 142px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    border-top: 8px solid rgb(34,34,34);
+    color: #fff;
+}
+.smolltv{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+
+}
+.watch{
+    width: 52%;
+    height: 100%;
+
+}
+.watch h1{
+    font-size: 3rem;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.watch h2{
+    font-size: 1.65rem;
+}
+.video{
+    width: 48%;
+   display: flex;
+   position: absolute;
+    height: 75%;
+    left: 50%;
+
+
+}
+.smollvideo{
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    height: 90%;
+    
+}
+.smollvideo img{
+    margin-left: 49px;
+    width: 92%;
+    height: 134%;
+    margin-top: 10px;
+    bottom: 55px;
+    position: relative;
+    z-index: 2;
+}
+.movingvideo{
+    position: absolute;
+    bottom: 6vh;
+    left: 103px;
+    width: 83.8%;
+    height: fit-content;
+}
+/* Tab 2 start here */
+.offline{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 142px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+   height: 60vh;
+    color: #fff;
+    overflow: hidden;
+}
+ .smolloffline{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: auto;
+
+}
+.download {
+    width: 52%;
+    height: 100%;
+}
+.download h1{
+    font-size: 3rem;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.download h2{
+    font-size: 1.65rem;
+}
+h1 span{
+    display: block;
+}
+.image2{
+    width: 48%;
+    display: flex;
+    position: absolute;
+     height: 75%;
+     
+     right: 46%;
+ 
+   
+}
+.classsmollimage{
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    height: 90%;
+    
+}
+.classsmollimage img{
+    margin-right: 49px;
+    width: 85%;
+    height: 120%;
+    margin-top: 10px;
+    bottom: 55px;
+    position: relative;
+    z-index: 2;
+}
+.story-card-animation{
+    position: absolute;
+    width: 330.98px;
+    min-width: 15em;
+    border: 2px solid rgba(255,255,255,.25);
+    border-radius: .75em;
+    display: flex;
+    align-items: center;
+    height: 104px;
+    z-index: 2;
+    top: 57%;
+    left: 83px;
+    background-color: #000;
+}
+.card-image{
+    height: 84px;
+    width: 57.14px;
+}
+.card-image img{
+    height: 75px;
+    width: 57.14px;
+    bottom: 9px;
+    left: 6px;
+    position: relative;
+}
+.card-text{
+    position: relative;
+    left: 24px;
+    flex-shrink: 1;
+    margin: .3em 0;
+
+}
+.card-text .text-1{
+    color: #0071eb;
+    font-weight: 400;
+}
+.card-text .text-0{
+    color: #fff;
+    font-weight: 600;
+}
+/* .story-card-animation::after{
+    content: '';
+    background: url("/Image/download-icon.gif") center center no-repeat;
+    z-index: 3;
+} */
+.card-gif{
+    background: url("/Image/download-icon.gif") center center no-repeat;
+    z-index: 3;
+    background-size: 100%;
+    outline-offset: -2px;
+    position: relative;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+
+}
+/* panel 3 */
+.watch2{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 142px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+ 
+    color: #fff;
+}
+.smollwatch{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+
+}
+.smollwatch-text{
+    width: 52%;
+    height: 100%;
+
+}
+.smollwatch-text h1{
+    font-size: 3rem;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.smollwatch-text h2{
+    font-size: 1.65rem;
+}
+.png{
+    width: 48%;
+    display: flex;
+    position: absolute;
+     height: 75%;
+     left: 50%;
+}
+.imagesetter{
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    height: 90%;
+}
+.imagesetter img{
+    margin-left: 49px;
+    width: 92%;
+    height: 134%;
+    margin-top: 10px;
+    bottom: 55px;
+    position: relative;
+    z-index: 2;
+}
+.video2{
+    position: absolute;
+    bottom: 6vh;
+    left: 135px;
+    width: 60.8%;
+    height: fit-content;
+    overflow: hidden;
+}
+/* last panel */
+
+.profile{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 142px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+   height: 60vh;
+    color: #fff;
+    overflow: hidden;
+}
+.smollprofile{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: auto;
+
+}
+.create{
+    width: 52%;
+    height: 100%;
+}
+.create h1{
+    font-size: 3rem;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.create h2{
+    font-size: 1.65rem;
+}
+/* FaQ section */
+.faq h1{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 3.4rem;
+    font-weight: 600;
+   }
+.list-container{
+    width:70%;
+    margin: 4em  auto;
+    list-style-type: none;
+    box-sizing: border-box;
+   }
+   
+   .list-wrapper{
+    margin-bottom:8px;
+   }
+   
+   .toggler{
+    color: white;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    width: 79%;
+    background: #303030;
+    padding: 0.7em 1.2em;
+    margin-bottom: 0.05em;
+    left: 10%;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.7rem;
+    cursor: pointer;
+   }
+   
+   .info{
+       position: relative;
+    background: #303030;
+     padding: 1.7em 1.8em;
+     width: 79%;
+     left: 10%;
+     font-weight: 200;
+    font-size: 1.5rem;
+     color: #fff;
+     transition: max-height .25s cubic-bezier(.5,0,.1,1);
+   }
+   
+   .close{
+     max-height: 0px;
+     overflow: hidden;
+     padding: 0;
+     transition: max-height 1s ease-in-out;
+   }
+   .boxelement2{
+       box-sizing: border-box;
+    display: flex;
+    width: 75vw;
+    position: relative;
+    bottom: 10px;
+height: 71px;
+left: 200px;
+margin-bottom: 30px;
+   }
+   #para3{
+       position: relative;
+       width: 100%;
+       color: #fff;
+       font-size: 1.2rem;
+       bottom: 15px;
+       box-sizing: border-box;
+   }
+   /* .clover{
+       color: white;
+       position: relative;
+       left: 30%;
+       padding-bottom: 5px;
+   }
+   .clover2{
+       position: relative;
+       left: 14%;
+   }
+   /* Footer */
+   .footer-top{
+    padding: 0;
+    margin: 0 0 30px;
+   }
+ .list-footer{
+    max-width: 1000px;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ .indiviual-list{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 24%;
+    padding-right: 12px;
+    vertical-align: top;
+ }
+ .smollbuttonfooter{
+    margin-left: 0;
+    margin-right: 15px;
+    left: 9px;
+    content: url(/Image/icons8-globe-24.png);
+    position: relative;
+    width: 21px;
+    top: 14px;
+ }
+ .imgfooter{
+    width: 180px;
+    position: absolute;
+    top: 42%;
+    left: 8.8%;
+    z-index: 2;
+    color: #757575;
+    height: 45px;
+    transform: translate(-50%, -50%);
+ }
+ .selectfooter{
+    position: relative;
+    right: -32px;
+    padding: 9px 21px;
+    background-color: transparent;
+    /* border: 1px solid white; */
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+    color: #757575;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background-image: url(/arrow_drop_down_white_24dp.svg); */
+    background-repeat: no-repeat;
+    background-position: left 60px top 50%;
+    padding-left: 10px;
+    top: -16px;
+    height: 38px;
+ }
+ .selectfooter option{
+    background: grey;
+    color: #fff;
+ }
+ .arrowfooter{
+    /* content: url(/arrow_drop_down_white_24dp.svg); */
+    content: url(/Image/icons8-sort-down-30.png);
+    right: -6.5rem;
+    position: relative;
+    height: 23px;
+    width: 20px;
+    top: -47px;
+    padding-left: 2px;
+ }
+ .buttonlangdiv{
+    border-radius: 2px;
+    position: relative;
+    border: 0.001px solid #fff;
+    width: 122px;
+    padding-left: 0;
+    margin-left: 0;
+    top: 25px;
+    height: 53.2px;
+ }
+
